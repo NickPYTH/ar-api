@@ -52,4 +52,7 @@ class TheoryViewSet(viewsets.ModelViewSet):
         course = Course.objects.get(id=course_id)
         course.theories.add(article)
         course.save()
+        article.order = course.theories.count() - 1
+        article.save()
+
         return HttpResponse(status=status.HTTP_201_CREATED)
