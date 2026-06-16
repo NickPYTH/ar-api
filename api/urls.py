@@ -14,7 +14,7 @@ from api.views.testViewSet import TestViewSet
 from api.views.theoryViewSet import TheoryViewSet
 from api.views.theory_studentViewSet import TheoryAndStudentViewSet
 
-router = routers.DefaultRouter()
+router = routers.DefaultRouter() # upd
 router.register(r'profiles', ProfileViewSet)
 router.register(r'achievements', AchievementViewSet)
 router.register(r'answers', AnswerViewSet)
