@@ -49,7 +49,8 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:3000',
-    'http://91.210.169.206:6767'
+    'http://91.210.169.206:6767',
+    'https://ar-ucheba.ru'
 ]
 
 ROOT_URLCONF = 'AR_API.urls'
