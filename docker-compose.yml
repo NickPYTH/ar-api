@@ -4,3 +4,8 @@ services:
       .
     ports:
       - "7788:7777"
+    volumes:
+      - media_data:/app/media
+
+volumes:
+  media_data:
